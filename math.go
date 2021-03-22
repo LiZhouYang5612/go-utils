@@ -7,3 +7,11 @@ func Add(nums... int) int  {
 	}
 	return sum
 }
+
+func Times(nums... int) int  {
+	sum := 1
+	for i := 0; i < len(nums); i++ {
+		sum *= nums[i]
+	}
+	return sum
+}
